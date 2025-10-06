@@ -75,6 +75,15 @@ vim.o.inccommand = 'split'
 -- Show which line your cursor is on
 vim.o.cursorline = true
 
+-- Use spaces instead of tabs
+vim.opt.expandtab = true
+
+-- Size of an indent
+vim.opt.shiftwidth = 2
+
+-- Insert indents automatically
+opt.smartindent = true
+
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
 
