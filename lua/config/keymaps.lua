@@ -52,4 +52,4 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-_>', '<cmd>normal gcc<cr>', { desc = '(Un)
 --
 -- TODO: add keymaps:
 -- move selected line left and right on tab.
---
+-- move line up down by alt j,k
