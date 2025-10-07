@@ -23,13 +23,14 @@
 -- },
 
 return {
-  'Mofiqul/vscode.nvim',
+  'catppuccin/nvim',
 
   priority = 1000, -- Make sure to load this before all the other start plugins.
   lazy = false,
   config = function()
     ---@diagnostic disable-next-line: missing-fields
-    require('vscode').setup {
+    require('catppuccin').setup {
+      flavour = 'macchiato', -- latte, frappe, macchiato, mocha
       -- Alternatively set style in setup
       -- style = 'light'
 
@@ -44,6 +45,6 @@ return {
     }
 
     -- Load the colorscheme here.
-    vim.cmd.colorscheme 'vscode'
+    vim.cmd.colorscheme 'catppuccin'
   end,
 }

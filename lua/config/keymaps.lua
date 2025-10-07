@@ -55,15 +55,15 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-_>', '<cmd>normal gcc<cr>', { desc = '(Un)
 -- move line up down by alt j,k
 --
 -- Move Lines
-vim.keymap.set("n", "<A-j>", "<cmd>execute 'move .+' . v:count1<cr>==", { desc = "Move Down" })
-vim.keymap.set("n", "<A-k>", "<cmd>execute 'move .-' . (v:count1 + 1)<cr>==", { desc = "Move Up" })
-vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
-vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
-vim.keymap.set("v", "<A-j>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
-vim.keymap.set("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
+vim.keymap.set('n', '<A-j>', "<cmd>execute 'move .+' . v:count1<cr>==", { desc = 'Move Down' })
+vim.keymap.set('n', '<A-k>', "<cmd>execute 'move .-' . (v:count1 + 1)<cr>==", { desc = 'Move Up' })
+-- vim.keymap.set("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
+-- vim.keymap.set("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
+vim.keymap.set('v', '<A-j>', ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = 'Move Down' })
+vim.keymap.set('v', '<A-k>', ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = 'Move Up' })
 
 -- Shift lines
-vim.keymap.set('n', '<Tab>', '>>', { desc = "Shift line right" })
-vim.keymap.set('n', '<S-Tab>', '<<', { desc = "Shift line left" })
-vim.keymap.set('v', '<Tab>', '>gv', { desc = "Shift line right" })
-vim.keymap.set('v', '<S-Tab>', '<gv', { desc = "Shift line left" })
+vim.keymap.set('n', '<Tab>', '>>', { desc = 'Shift line right' })
+vim.keymap.set('n', '<S-Tab>', '<<', { desc = 'Shift line left' })
+vim.keymap.set('v', '<Tab>', '>gv', { desc = 'Shift line right' })
+vim.keymap.set('v', '<S-Tab>', '<gv', { desc = 'Shift line left' })

@@ -82,7 +82,7 @@ vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 
 -- Insert indents automatically
-opt.smartindent = true
+vim.opt.smartindent = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
