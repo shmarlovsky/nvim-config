@@ -30,7 +30,7 @@ return {
   config = function()
     ---@diagnostic disable-next-line: missing-fields
     require('catppuccin').setup {
-      flavour = 'macchiato', -- latte, frappe, macchiato, mocha
+      flavour = 'mocha', -- latte, frappe, macchiato, mocha
       -- Alternatively set style in setup
       -- style = 'light'
 
